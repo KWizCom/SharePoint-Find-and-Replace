@@ -214,7 +214,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3224B6168CB0451EABC66E61A2767CC9"
             {
-            "SourcePath" = "8:..\\..\\..\\SharedUtilities\\2007\\KWizCom_Files\\Images\\KWizCom_Setup_Banner.bmp"
+            "SourcePath" = "8:..\\SPListFindReplace\\KWizCom_Setup_Banner.bmp"
             "TargetName" = "8:KWizCom_Setup_Banner.bmp"
             "Tag" = "8:"
             "Folder" = "8:_0962045F4C3B4C22A4FC2DA15CDB1365"
@@ -234,7 +234,7 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DC0CA515A9014B8D9751EB712AE235FD"
             {
-            "SourcePath" = "8:..\\..\\..\\SharedUtilities\\2007\\KWizCom_Files\\ULA\\KWizCom End User License Agreement.rtf"
+            "SourcePath" = "8:..\\SPListFindReplace\\KWizCom End User License Agreement.rtf"
             "TargetName" = "8:KWizCom End User License Agreement.rtf"
             "Tag" = "8:"
             "Folder" = "8:_0962045F4C3B4C22A4FC2DA15CDB1365"

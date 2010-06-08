@@ -145,6 +145,7 @@
     <Compile Include="Validation\SPSiteCheck.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Content Include="KWizCom_Setup_Banner.bmp" />
     <Content Include="ListFindReplace.ico" />
     <Content Include="Resources\Microsoft.SharePoint.dll" />
     <EmbeddedResource Include="Controls\ListSiteDefinition.resx">
@@ -173,6 +174,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KWizCom End User License Agreement.rtf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
