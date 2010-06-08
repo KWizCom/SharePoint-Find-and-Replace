@@ -100,7 +100,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:KWizCom SharePoint List Find and Replace Evaluation v1.0.14.msi"
+        "OutputFilename" = "8:KWizCom SharePoint Find and Replace v1.0.15.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -320,7 +320,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:KWizCom SharePoint List Find and Replace"
         "ProductCode" = "8:{A5875EC2-C4E1-4850-BF2D-17DDD80F3158}"
-        "PackageCode" = "8:{A8E2CC5C-CE5D-4DEE-A1A0-F17645FE8A54}"
+        "PackageCode" = "8:{F4C5612D-117E-4499-9A64-77342139EFB3}"
         "UpgradeCode" = "8:{97E93101-46AB-47AF-BCF0-190A8FA03974}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -908,7 +908,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C2C29D0716A244EEAABE5726477A7027"
             {
-            "SourcePath" = "8:..\\SPListFindReplace\\obj\\Debug\\SPListFindReplace.exe"
+            "SourcePath" = "8:..\\SPListFindReplace\\obj\\Release\\SPListFindReplace.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0962045F4C3B4C22A4FC2DA15CDB1365"
