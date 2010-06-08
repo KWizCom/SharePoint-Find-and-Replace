@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPListFindReplace", "SPListFindReplace\SPListFindReplace.csproj", "{FBDE4EBB-0228-42D2-A184-BFB9535E4EA4}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SPListFindReplace.Setup", "SPListFindReplace.Setup\SPListFindReplace.Setup.vdproj", "{5BB8D13A-2C13-49B6-9397-5A4D2C77417D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs01.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SPListFindReplace.Setup\\SPListFindReplace.Setup.vdproj
+		SccProjectName1 = SPListFindReplace.Setup
+		SccLocalPath1 = SPListFindReplace.Setup
+		SccProjectUniqueName2 = SPListFindReplace\\SPListFindReplace.csproj
+		SccProjectName2 = SPListFindReplace
+		SccLocalPath2 = SPListFindReplace
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBDE4EBB-0228-42D2-A184-BFB9535E4EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDE4EBB-0228-42D2-A184-BFB9535E4EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDE4EBB-0228-42D2-A184-BFB9535E4EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDE4EBB-0228-42D2-A184-BFB9535E4EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB8D13A-2C13-49B6-9397-5A4D2C77417D}.Debug|Any CPU.ActiveCfg = Debug
+		{5BB8D13A-2C13-49B6-9397-5A4D2C77417D}.Debug|Any CPU.Build.0 = Debug
+		{5BB8D13A-2C13-49B6-9397-5A4D2C77417D}.Release|Any CPU.ActiveCfg = Release
+		{5BB8D13A-2C13-49B6-9397-5A4D2C77417D}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
