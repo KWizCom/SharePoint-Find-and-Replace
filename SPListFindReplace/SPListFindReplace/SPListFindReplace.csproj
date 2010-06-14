@@ -111,6 +111,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -139,6 +145,11 @@
     <Compile Include="FindReplace\FindReplaceParameters.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Validation\SPPortalCheck.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -147,7 +158,11 @@
     </Compile>
     <Content Include="KWizCom_Setup_Banner.bmp" />
     <Content Include="ListFindReplace.ico" />
+    <None Include="Resources\KWizCom_logo_for_about.gif" />
     <Content Include="Resources\Microsoft.SharePoint.dll" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ListSiteDefinition.resx">
       <DependentUpon>ListSiteDefinition.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +171,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FindAndReplace.resx">
       <DependentUpon>FindAndReplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

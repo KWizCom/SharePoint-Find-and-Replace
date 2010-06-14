@@ -59,6 +59,9 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
 		private ListSiteDefinition listSiteDefinitionXmlLibraries;
 		private ListSiteDefinition listSiteDefinitionXMLDocuments;
 		private ListSiteDefinition listSiteDefinitionWebPartNames;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -114,13 +117,8 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxSite = new System.Windows.Forms.GroupBox();
             this.checkBoxSubSites = new System.Windows.Forms.CheckBox();
-            this.textBoxSiteURL = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.PromptedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.listSiteDefinitionXmlLibraries = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
-            this.listSiteDefinitionWebParts = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
             this.checkBoxSearchWebParts = new System.Windows.Forms.CheckBox();
-            this.listSiteDefinitionFields = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
-            this.listSiteDefinitionLists = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
             this.checkBoxXmlSearch = new System.Windows.Forms.CheckBox();
             this.groupBoxLogFile = new System.Windows.Forms.GroupBox();
             this.buttonOpenFolder = new System.Windows.Forms.Button();
@@ -131,18 +129,26 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.buttonStop = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.OutputWindowControl();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.linkKwizCom = new System.Windows.Forms.LinkLabel();
             this.groupBoxTextFiles = new System.Windows.Forms.GroupBox();
-            this.listSiteDefinitionXMLDocuments = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelWebPartCheck = new System.Windows.Forms.Panel();
             this.groupBoxList = new System.Windows.Forms.GroupBox();
             this.panelListCheck = new System.Windows.Forms.Panel();
             this.checkBoxListProperties = new System.Windows.Forms.CheckBox();
             this.groupBoxWebParts = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listSiteDefinitionWebPartNames = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
+            this.listSiteDefinitionWebParts = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
+            this.listSiteDefinitionXMLDocuments = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
+            this.listSiteDefinitionXmlLibraries = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
+            this.richTextBox1 = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.OutputWindowControl();
+            this.textBoxSiteURL = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.PromptedTextBox();
+            this.listSiteDefinitionLists = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
+            this.listSiteDefinitionFields = new KWizCom.SharePoint.Utilities.SPListFindReplace.Controls.ListSiteDefinition();
             this.groupBoxFindReplace.SuspendLayout();
             this.groupBoxSite.SuspendLayout();
             this.groupBoxLogFile.SuspendLayout();
@@ -154,15 +160,18 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.groupBoxList.SuspendLayout();
             this.panelListCheck.SuspendLayout();
             this.groupBoxWebParts.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxFindReplace
             // 
+            this.groupBoxFindReplace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxFindReplace.Controls.Add(this.textBoxReplace);
             this.groupBoxFindReplace.Controls.Add(this.label2);
             this.groupBoxFindReplace.Controls.Add(this.textBoxFind);
             this.groupBoxFindReplace.Controls.Add(this.label1);
-            this.groupBoxFindReplace.Location = new System.Drawing.Point(8, 0);
+            this.groupBoxFindReplace.Location = new System.Drawing.Point(4, 27);
             this.groupBoxFindReplace.Name = "groupBoxFindReplace";
             this.groupBoxFindReplace.Size = new System.Drawing.Size(456, 56);
             this.groupBoxFindReplace.TabIndex = 0;
@@ -171,6 +180,8 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // textBoxReplace
             // 
+            this.textBoxReplace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxReplace.Location = new System.Drawing.Point(288, 22);
             this.textBoxReplace.Name = "textBoxReplace";
             this.textBoxReplace.Size = new System.Drawing.Size(160, 21);
@@ -179,7 +190,7 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(239, 20);
+            this.label2.Location = new System.Drawing.Point(234, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 23);
             this.label2.TabIndex = 2;
@@ -207,10 +218,12 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // groupBoxSite
             // 
+            this.groupBoxSite.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxSite.Controls.Add(this.checkBoxSubSites);
             this.groupBoxSite.Controls.Add(this.textBoxSiteURL);
             this.groupBoxSite.Controls.Add(this.label3);
-            this.groupBoxSite.Location = new System.Drawing.Point(8, 56);
+            this.groupBoxSite.Location = new System.Drawing.Point(4, 89);
             this.groupBoxSite.Name = "groupBoxSite";
             this.groupBoxSite.Size = new System.Drawing.Size(456, 72);
             this.groupBoxSite.TabIndex = 1;
@@ -230,18 +243,6 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.checkBoxSubSites.Text = "Include all sub-sites";
             this.checkBoxSubSites.CheckedChanged += new System.EventHandler(this.checkBoxSubSites_CheckedChanged);
             // 
-            // textBoxSiteURL
-            // 
-            this.textBoxSiteURL.FocusSelect = true;
-            this.textBoxSiteURL.Location = new System.Drawing.Point(64, 24);
-            this.textBoxSiteURL.Name = "textBoxSiteURL";
-            this.textBoxSiteURL.PromptFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.textBoxSiteURL.PromptForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxSiteURL.PromptText = "http://localhost";
-            this.textBoxSiteURL.Size = new System.Drawing.Size(384, 21);
-            this.textBoxSiteURL.TabIndex = 5;
-            this.textBoxSiteURL.TextChanged += new System.EventHandler(this.textBoxSiteURL_TextChanged);
-            // 
             // label3
             // 
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -251,26 +252,6 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.label3.TabIndex = 4;
             this.label3.Text = "Site URL:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // listSiteDefinitionXmlLibraries
-            // 
-            this.listSiteDefinitionXmlLibraries.Caption = "Doc. Libraries:";
-            this.listSiteDefinitionXmlLibraries.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.listSiteDefinitionXmlLibraries.Location = new System.Drawing.Point(8, 18);
-            this.listSiteDefinitionXmlLibraries.Name = "listSiteDefinitionXmlLibraries";
-            this.listSiteDefinitionXmlLibraries.PromptText = "[name];[name];[name];";
-            this.listSiteDefinitionXmlLibraries.Size = new System.Drawing.Size(440, 22);
-            this.listSiteDefinitionXmlLibraries.TabIndex = 12;
-            // 
-            // listSiteDefinitionWebParts
-            // 
-            this.listSiteDefinitionWebParts.Caption = "Properties:";
-            this.listSiteDefinitionWebParts.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.listSiteDefinitionWebParts.Location = new System.Drawing.Point(8, 42);
-            this.listSiteDefinitionWebParts.Name = "listSiteDefinitionWebParts";
-            this.listSiteDefinitionWebParts.PromptText = "[name];[name];[name];";
-            this.listSiteDefinitionWebParts.Size = new System.Drawing.Size(440, 22);
-            this.listSiteDefinitionWebParts.TabIndex = 10;
             // 
             // checkBoxSearchWebParts
             // 
@@ -282,28 +263,6 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.checkBoxSearchWebParts.TabIndex = 9;
             this.checkBoxSearchWebParts.Text = "Search web parts";
             this.checkBoxSearchWebParts.CheckedChanged += new System.EventHandler(this.checkBoxSearchWebParts_CheckedChanged);
-            // 
-            // listSiteDefinitionFields
-            // 
-            this.listSiteDefinitionFields.Caption = "Fields:";
-            this.listSiteDefinitionFields.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.listSiteDefinitionFields.Location = new System.Drawing.Point(8, 42);
-            this.listSiteDefinitionFields.Name = "listSiteDefinitionFields";
-            this.listSiteDefinitionFields.PromptText = "[name];[name];[name];";
-            this.listSiteDefinitionFields.Size = new System.Drawing.Size(440, 22);
-            this.listSiteDefinitionFields.TabIndex = 8;
-            this.listSiteDefinitionFields.PromtedTextChanged += new System.EventHandler(this.listSiteDefinitionLists_PromtedTextChanged);
-            // 
-            // listSiteDefinitionLists
-            // 
-            this.listSiteDefinitionLists.Caption = "Lists:";
-            this.listSiteDefinitionLists.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.listSiteDefinitionLists.Location = new System.Drawing.Point(8, 18);
-            this.listSiteDefinitionLists.Name = "listSiteDefinitionLists";
-            this.listSiteDefinitionLists.PromptText = "[name];[name];[name];";
-            this.listSiteDefinitionLists.Size = new System.Drawing.Size(440, 22);
-            this.listSiteDefinitionLists.TabIndex = 7;
-            this.listSiteDefinitionLists.PromtedTextChanged += new System.EventHandler(this.listSiteDefinitionLists_PromtedTextChanged);
             // 
             // checkBoxXmlSearch
             // 
@@ -318,10 +277,12 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // groupBoxLogFile
             // 
+            this.groupBoxLogFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxLogFile.Controls.Add(this.buttonOpenFolder);
             this.groupBoxLogFile.Controls.Add(this.textBoxLogFile);
             this.groupBoxLogFile.Controls.Add(this.label5);
-            this.groupBoxLogFile.Location = new System.Drawing.Point(8, 350);
+            this.groupBoxLogFile.Location = new System.Drawing.Point(4, 414);
             this.groupBoxLogFile.Name = "groupBoxLogFile";
             this.groupBoxLogFile.Size = new System.Drawing.Size(456, 56);
             this.groupBoxLogFile.TabIndex = 4;
@@ -330,6 +291,7 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // buttonOpenFolder
             // 
+            this.buttonOpenFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonOpenFolder.Location = new System.Drawing.Point(426, 22);
             this.buttonOpenFolder.Name = "buttonOpenFolder";
             this.buttonOpenFolder.Size = new System.Drawing.Size(22, 22);
@@ -339,6 +301,8 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // textBoxLogFile
             // 
+            this.textBoxLogFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxLogFile.Location = new System.Drawing.Point(64, 22);
             this.textBoxLogFile.Name = "textBoxLogFile";
             this.textBoxLogFile.Size = new System.Drawing.Size(360, 21);
@@ -357,7 +321,8 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(389, 410);
+            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExit.Location = new System.Drawing.Point(385, 476);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(75, 22);
             this.buttonExit.TabIndex = 5;
@@ -367,7 +332,7 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // buttonStart
             // 
             this.buttonStart.Enabled = false;
-            this.buttonStart.Location = new System.Drawing.Point(8, 410);
+            this.buttonStart.Location = new System.Drawing.Point(4, 476);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(128, 22);
             this.buttonStart.TabIndex = 6;
@@ -377,7 +342,7 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // buttonStop
             // 
             this.buttonStop.Enabled = false;
-            this.buttonStop.Location = new System.Drawing.Point(144, 410);
+            this.buttonStop.Location = new System.Drawing.Point(140, 476);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(75, 22);
             this.buttonStop.TabIndex = 7;
@@ -386,9 +351,12 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.pictureBox1);
             this.groupBox4.Controls.Add(this.richTextBox1);
-            this.groupBox4.Location = new System.Drawing.Point(8, 440);
+            this.groupBox4.Location = new System.Drawing.Point(4, 504);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(456, 105);
             this.groupBox4.TabIndex = 8;
@@ -407,17 +375,10 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(8, 16);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(440, 82);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
             // linkKwizCom
             // 
-            this.linkKwizCom.Location = new System.Drawing.Point(368, 545);
+            this.linkKwizCom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkKwizCom.Location = new System.Drawing.Point(360, 612);
             this.linkKwizCom.Name = "linkKwizCom";
             this.linkKwizCom.Size = new System.Drawing.Size(100, 23);
             this.linkKwizCom.TabIndex = 9;
@@ -426,24 +387,16 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // groupBoxTextFiles
             // 
+            this.groupBoxTextFiles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxTextFiles.Controls.Add(this.listSiteDefinitionXMLDocuments);
             this.groupBoxTextFiles.Controls.Add(this.panel2);
             this.groupBoxTextFiles.Controls.Add(this.listSiteDefinitionXmlLibraries);
-            this.groupBoxTextFiles.Location = new System.Drawing.Point(8, 277);
+            this.groupBoxTextFiles.Location = new System.Drawing.Point(4, 336);
             this.groupBoxTextFiles.Name = "groupBoxTextFiles";
             this.groupBoxTextFiles.Size = new System.Drawing.Size(456, 72);
             this.groupBoxTextFiles.TabIndex = 10;
             this.groupBoxTextFiles.TabStop = false;
-            // 
-            // listSiteDefinitionXMLDocuments
-            // 
-            this.listSiteDefinitionXMLDocuments.Caption = "Documents:";
-            this.listSiteDefinitionXMLDocuments.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.listSiteDefinitionXMLDocuments.Location = new System.Drawing.Point(8, 42);
-            this.listSiteDefinitionXMLDocuments.Name = "listSiteDefinitionXMLDocuments";
-            this.listSiteDefinitionXMLDocuments.PromptText = "[*.xml];[myfile.txt]";
-            this.listSiteDefinitionXMLDocuments.Size = new System.Drawing.Size(440, 22);
-            this.listSiteDefinitionXMLDocuments.TabIndex = 13;
             // 
             // panel2
             // 
@@ -463,10 +416,12 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // groupBoxList
             // 
+            this.groupBoxList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxList.Controls.Add(this.panelListCheck);
             this.groupBoxList.Controls.Add(this.listSiteDefinitionLists);
             this.groupBoxList.Controls.Add(this.listSiteDefinitionFields);
-            this.groupBoxList.Location = new System.Drawing.Point(8, 129);
+            this.groupBoxList.Location = new System.Drawing.Point(4, 171);
             this.groupBoxList.Name = "groupBoxList";
             this.groupBoxList.Size = new System.Drawing.Size(456, 72);
             this.groupBoxList.TabIndex = 7;
@@ -493,17 +448,46 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             // 
             // groupBoxWebParts
             // 
+            this.groupBoxWebParts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxWebParts.Controls.Add(this.listSiteDefinitionWebPartNames);
             this.groupBoxWebParts.Controls.Add(this.panelWebPartCheck);
             this.groupBoxWebParts.Controls.Add(this.listSiteDefinitionWebParts);
-            this.groupBoxWebParts.Location = new System.Drawing.Point(8, 203);
+            this.groupBoxWebParts.Location = new System.Drawing.Point(4, 254);
             this.groupBoxWebParts.Name = "groupBoxWebParts";
             this.groupBoxWebParts.Size = new System.Drawing.Size(456, 72);
             this.groupBoxWebParts.TabIndex = 11;
             this.groupBoxWebParts.TabStop = false;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(472, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // listSiteDefinitionWebPartNames
             // 
+            this.listSiteDefinitionWebPartNames.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.listSiteDefinitionWebPartNames.Caption = "Web Parts:";
             this.listSiteDefinitionWebPartNames.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.listSiteDefinitionWebPartNames.Location = new System.Drawing.Point(8, 18);
@@ -512,26 +496,113 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.listSiteDefinitionWebPartNames.Size = new System.Drawing.Size(440, 22);
             this.listSiteDefinitionWebPartNames.TabIndex = 11;
             // 
+            // listSiteDefinitionWebParts
+            // 
+            this.listSiteDefinitionWebParts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listSiteDefinitionWebParts.Caption = "Properties:";
+            this.listSiteDefinitionWebParts.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.listSiteDefinitionWebParts.Location = new System.Drawing.Point(8, 42);
+            this.listSiteDefinitionWebParts.Name = "listSiteDefinitionWebParts";
+            this.listSiteDefinitionWebParts.PromptText = "[name];[name];[name];";
+            this.listSiteDefinitionWebParts.Size = new System.Drawing.Size(440, 22);
+            this.listSiteDefinitionWebParts.TabIndex = 10;
+            // 
+            // listSiteDefinitionXMLDocuments
+            // 
+            this.listSiteDefinitionXMLDocuments.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listSiteDefinitionXMLDocuments.Caption = "Documents:";
+            this.listSiteDefinitionXMLDocuments.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.listSiteDefinitionXMLDocuments.Location = new System.Drawing.Point(8, 42);
+            this.listSiteDefinitionXMLDocuments.Name = "listSiteDefinitionXMLDocuments";
+            this.listSiteDefinitionXMLDocuments.PromptText = "[*.xml];[myfile.txt]";
+            this.listSiteDefinitionXMLDocuments.Size = new System.Drawing.Size(440, 22);
+            this.listSiteDefinitionXMLDocuments.TabIndex = 13;
+            // 
+            // listSiteDefinitionXmlLibraries
+            // 
+            this.listSiteDefinitionXmlLibraries.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listSiteDefinitionXmlLibraries.Caption = "Doc. Libraries:";
+            this.listSiteDefinitionXmlLibraries.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.listSiteDefinitionXmlLibraries.Location = new System.Drawing.Point(8, 18);
+            this.listSiteDefinitionXmlLibraries.Name = "listSiteDefinitionXmlLibraries";
+            this.listSiteDefinitionXmlLibraries.PromptText = "[name];[name];[name];";
+            this.listSiteDefinitionXmlLibraries.Size = new System.Drawing.Size(440, 22);
+            this.listSiteDefinitionXmlLibraries.TabIndex = 12;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(8, 16);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(440, 82);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // textBoxSiteURL
+            // 
+            this.textBoxSiteURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSiteURL.FocusSelect = true;
+            this.textBoxSiteURL.Location = new System.Drawing.Point(64, 24);
+            this.textBoxSiteURL.Name = "textBoxSiteURL";
+            this.textBoxSiteURL.PromptFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.textBoxSiteURL.PromptForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBoxSiteURL.PromptText = "http://localhost";
+            this.textBoxSiteURL.Size = new System.Drawing.Size(384, 21);
+            this.textBoxSiteURL.TabIndex = 5;
+            this.textBoxSiteURL.TextChanged += new System.EventHandler(this.textBoxSiteURL_TextChanged);
+            // 
+            // listSiteDefinitionLists
+            // 
+            this.listSiteDefinitionLists.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listSiteDefinitionLists.Caption = "Lists:";
+            this.listSiteDefinitionLists.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.listSiteDefinitionLists.Location = new System.Drawing.Point(8, 18);
+            this.listSiteDefinitionLists.Name = "listSiteDefinitionLists";
+            this.listSiteDefinitionLists.PromptText = "[name];[name];[name];";
+            this.listSiteDefinitionLists.Size = new System.Drawing.Size(440, 22);
+            this.listSiteDefinitionLists.TabIndex = 7;
+            this.listSiteDefinitionLists.PromtedTextChanged += new System.EventHandler(this.listSiteDefinitionLists_PromtedTextChanged);
+            // 
+            // listSiteDefinitionFields
+            // 
+            this.listSiteDefinitionFields.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listSiteDefinitionFields.Caption = "Fields:";
+            this.listSiteDefinitionFields.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.listSiteDefinitionFields.Location = new System.Drawing.Point(8, 42);
+            this.listSiteDefinitionFields.Name = "listSiteDefinitionFields";
+            this.listSiteDefinitionFields.PromptText = "[name];[name];[name];";
+            this.listSiteDefinitionFields.Size = new System.Drawing.Size(440, 22);
+            this.listSiteDefinitionFields.TabIndex = 8;
+            this.listSiteDefinitionFields.PromtedTextChanged += new System.EventHandler(this.listSiteDefinitionLists_PromtedTextChanged);
+            // 
             // FindAndReplace
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 14);
-            this.ClientSize = new System.Drawing.Size(472, 563);
+            this.ClientSize = new System.Drawing.Size(472, 633);
             this.Controls.Add(this.groupBoxWebParts);
             this.Controls.Add(this.groupBoxTextFiles);
             this.Controls.Add(this.linkKwizCom);
             this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBoxSite);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.groupBoxSite);
             this.Controls.Add(this.groupBoxFindReplace);
             this.Controls.Add(this.groupBoxLogFile);
             this.Controls.Add(this.groupBoxList);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(480, 610);
-            this.MinimumSize = new System.Drawing.Size(480, 590);
+            this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(480, 660);
             this.Name = "FindAndReplace";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KWizCom SharePoint Find and Replace";
@@ -551,7 +622,10 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
             this.groupBoxList.ResumeLayout(false);
             this.panelListCheck.ResumeLayout(false);
             this.groupBoxWebParts.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion
@@ -821,7 +895,7 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
 			this.textBoxSiteURL.Text = "http://localhost/sites/Test/sub/default.aspx";
 #endif
 		
-			this.Text = "KWizCom SharePoint Find and Replace " + Constants.ProductVersion;
+			this.Text = Constants.ProductName + " " + Constants.ProductVersion;
 			this.linkKwizCom.Click += new EventHandler(linkKwizCom_Click);
 		}
 		
@@ -986,6 +1060,11 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
 		{
 		
 		}
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new About().ShowDialog();
+        }
 
 	}
 }
