@@ -660,10 +660,15 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace
 		/// <param name="isEnable"></param>
 		private void EnableButtons(bool isEnable)
 		{
-			this.buttonExit.Enabled = isEnable;
-			this.buttonStart.Enabled = isEnable;
-			this.buttonStop.Enabled = !isEnable;
-			this.pictureBox1.Visible = !isEnable;
+            if (this.InvokeRequired)//thread safe ui update
+                this.Invoke(new MethodInvoker(() => EnableButtons(isEnable)));
+            else
+            {
+                this.buttonExit.Enabled = isEnable;
+                this.buttonStart.Enabled = isEnable;
+                this.buttonStop.Enabled = !isEnable;
+                this.pictureBox1.Visible = !isEnable;
+            }
 		}
 
 		protected void PrepareParameters ()
