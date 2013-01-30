@@ -17,7 +17,10 @@ namespace KWizCom.SharePoint.Utilities.SPListFindReplace.Controls
 
 		public void OutputText(string text)
 		{
-			SelectedText = text + "\r\n";
+            if (this.InvokeRequired)//thread safe ui update
+                this.Invoke(new MethodInvoker(()=>OutputText(text)));
+            else
+    			SelectedText = text + "\r\n";
 		}
 	}
 }

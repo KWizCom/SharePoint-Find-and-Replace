@@ -54,7 +54,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(37, 13);
             this.labelVersion.TabIndex = 1;
-            this.labelVersion.Text = "1.0.00";
+            this.labelVersion.Text = Constants.ProductVersion;
             // 
             // pictureBox1
             // 
